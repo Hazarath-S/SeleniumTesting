@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name=" parallel Suite" parallel="tests">
+  <test thread-count="5" name="ChromeBroswer">
+	<parameter name="Broswers" value="Chrome"></parameter>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase7"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="EdgeBroswer">
+	<parameter name="Broswers" value="Edge"></parameter>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase7"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="FireFoxBroswer">
+	<parameter name="Broswers" value="FireFox"></parameter>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase7"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

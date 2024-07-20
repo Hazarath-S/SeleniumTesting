@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [ proj parallel Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="EdgeBroswer(failed)">
+    <parameter name="Broswers" value="Edge"/>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase6">
+        <methods>
+          <include name="product_page" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Project1_GTM_TestCases.TestCase6 -->
+    </classes>
+  </test> <!-- EdgeBroswer(failed) -->
+  <test thread-count="5" parallel="tests" name="FireFoxBroswer(failed)">
+    <parameter name="Broswers" value="FireFox"/>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase6">
+        <methods>
+          <include name="product_page" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Project1_GTM_TestCases.TestCase6 -->
+    </classes>
+  </test> <!-- FireFoxBroswer(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeBroswer(failed)">
+    <parameter name="Broswers" value="Chrome"/>
+    <classes>
+      <class name="Project1_GTM_TestCases.TestCase6">
+        <methods>
+          <include name="product_page" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Project1_GTM_TestCases.TestCase6 -->
+    </classes>
+  </test> <!-- ChromeBroswer(failed) -->
+</suite> <!-- Failed suite [ proj parallel Suite] -->
